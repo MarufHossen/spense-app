@@ -23,6 +23,8 @@
     <a href="https://github.com/MarufHossen/spense-app/issues">Report Bug</a>
     ·
     <a href="https://github.com/MarufHossen/spense-app/issues">Request Feature</a>
+    ·
+    <a href="https://trello.com/b/HSK4Pzaf/spense-app">Trello Board</a>
   </p>
 </div>
 
@@ -108,13 +110,13 @@ Heres how you can run the project.
 
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
+- [x] Sketch design of application
+- [ ] UI design of the app with Flutter
+- [ ] Create the REST api for the application
+- [ ] Implement api in the mobile application
 - [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish
+  - [ ] Bengali
+  - [ ] English
 
 See the [open issues](https://github.com/MarufHossen/spense-app/issues) for a full list of proposed features (and known issues).
 
