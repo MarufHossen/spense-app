@@ -7,9 +7,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/MarufHossen/spense-app">
+  <!-- <a href="https://github.com/MarufHossen/spense-app">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
   <h3 align="center">Spense</h3>
 
@@ -51,8 +51,6 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 This is a mobile application. The idea is to get cashback and discount and other offers from any store. In simple, it is a kind of loyalty app for all the store. They can use the app when they purchase something from any shop and get points which can be used for purchasing in future. The main thing is to avoid having a lots of loyalty card for several shops. Instead, they can use only one loyalty card from our application to get the offer and cashback.
 
