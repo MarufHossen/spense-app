@@ -5,6 +5,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -18,7 +19,6 @@
   <p align="center">
     Save your money while shopping
     <br />
-    <a href="https://github.com/MarufHossen/spense-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="#">View Demo</a>
