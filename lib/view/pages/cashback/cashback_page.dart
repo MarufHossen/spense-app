@@ -1,4 +1,5 @@
 import 'package:spense_app/view/pages/coupons_tab/coupons_tab.dart';
+import 'package:spense_app/view/pages/loyalty_card/loyalty_card.dart';
 
 import '../../../constants.dart';
 import 'package:flutter/material.dart';
@@ -13,8 +14,6 @@ class CashBackPage extends StatefulWidget {
 class _CashBackPageState extends State<CashBackPage> {
   @override
   Widget build(BuildContext context) {
-    // QRScanController parcelController = Get.put(QRScanController());
-
     return DefaultTabController(
         length: 2,
         initialIndex: 1,
@@ -25,7 +24,7 @@ class _CashBackPageState extends State<CashBackPage> {
             elevation: 0,
             backgroundColor: Colors.transparent,
             leading: AppBarIconButton(
-              icon: Icons.chevron_left_rounded,
+              icon: Icons.person,
               onPressed: () {},
             ),
             actions: [
@@ -46,13 +45,15 @@ class _CashBackPageState extends State<CashBackPage> {
                     highlightColor: Colors.transparent,
                     splashColor: Colors.transparent),
                 child: TabBar(
-                    indicator: const BoxDecoration(),
-                    labelPadding: kTabLabelPadding.copyWith(bottom: 8.0),
+                    indicator: BoxDecoration(
+                        color: Colors.amber,
+                        borderRadius: BorderRadius.circular(12)),
+                    // labelPadding: kTabLabelPadding.copyWith(bottom: 8.0),
                     labelStyle: cTabTextStyle,
                     labelColor: cTextColor,
                     unselectedLabelColor: cLightColor,
+                    padding: EdgeInsets.all(10.0),
                     tabs: [
-                      const Tab(text: "Loyality Cards"),
                       Tab(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -77,14 +78,18 @@ class _CashBackPageState extends State<CashBackPage> {
                             )
                           ],
                         ),
-                      )
+                      ),
+                      const Tab(text: "Loyality Cards"),
                     ]),
               ),
             ),
           ),
-          body: TabBarView(
-            physics: const BouncingScrollPhysics(),
-            children: [Container(), const CouponsTab()],
+          body: const TabBarView(
+            physics: BouncingScrollPhysics(),
+            children: [
+              CouponsTab(),
+              LoyaltyCard(),
+            ],
           ),
         ));
   }

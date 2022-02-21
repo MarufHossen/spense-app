@@ -37,57 +37,7 @@ class _HomeState extends State<Home> {
         init: SidebarController(),
         builder: (sidebarController) {
           return Scaffold(
-              // appBar: AppBar(
-              //   title: sidebarController.getSelectedPageTitle(),
-              //   actions: <Widget>[
-              //     FutureBuilder(
-              //         future: sidebarController.getCurrentAddress(),
-              //         builder:
-              //             (BuildContext context, AsyncSnapshot<Placemark> snapshot) {
-              //           switch (snapshot.connectionState) {
-              //             case ConnectionState.waiting:
-              //               if (!snapshot.hasData) {
-              //                 return const Center(
-              //                     child:
-              //                         CircularProgressIndicator(color: Colors.white));
-              //               }
-              //               break;
-              //             case ConnectionState.done:
-              //               if (snapshot.hasData) {
-              //                 return Padding(
-              //                   padding: const EdgeInsets.only(right: 6.0),
-              //                   child: Center(
-              //                     child: Text(
-              //                       // snapshot.data!.street.toString() +
-              //                       //     ", " +
-              //                       snapshot.data!.locality.toString(),
-              //                     ),
-              //                   ),
-              //                 );
-              //               }
-              //               break;
-              //             default:
-              //               return const Center(child: Text("Loading"));
-              //           }
 
-              //           return Center(child: Text("Loading"));
-              //           // if (!snapshot.hasData) {
-              //           //   return const Center(child: CircularProgressIndicator());
-              //           // } else {
-              //           //   return Center(
-              //           //       child: Text(snapshot.data!.street.toString()));
-              //           // }
-              //         }),
-              //     Padding(
-              //         padding: const EdgeInsets.only(right: 20.0),
-              //         child: GestureDetector(
-              //           onTap: () {
-              //             sidebarController.getCurrentAddress();
-              //           },
-              //           child: const Icon(Icons.my_location),
-              //         )),
-              //   ],
-              // ),
               // bottomNavigationBar: const CustomerBottomNavBar(),
               floatingActionButtonLocation:
                   FloatingActionButtonLocation.centerDocked,

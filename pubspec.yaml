@@ -44,6 +44,7 @@ dependencies:
   geocoding: ^2.0.2
   logger: ^1.1.0
   animated_bottom_navigation_bar: ^0.3.2
+  fl_chart: ^0.45.0
 
 dev_dependencies:
   flutter_test:
