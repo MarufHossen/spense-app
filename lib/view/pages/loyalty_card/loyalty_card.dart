@@ -14,7 +14,7 @@ class LoyaltyCard extends StatefulWidget {
 class _LoyaltyCardState extends State<LoyaltyCard>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late PageController _pageController = PageController();
+  late final PageController _pageController = PageController();
   late Animation<double> _rotation;
   final cards = 4;
 
@@ -37,8 +37,8 @@ class _LoyaltyCardState extends State<LoyaltyCard>
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays([]);
 
-    _controller =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 320));
+    _controller = AnimationController(
+        vsync: this, duration: const Duration(milliseconds: 320));
     _rotation = Tween(begin: 0.0, end: 90.0)
         .animate(CurvedAnimation(parent: _controller, curve: Curves.linear));
   }
@@ -219,7 +219,7 @@ class _Card extends StatelessWidget {
               Text('Platinum'.toUpperCase(), style: textStyle),
             ],
           ),
-          Spacer(),
+          const Spacer(),
           Text(
             '•••• •••• •••• 5040',
             style: textStyle.copyWith(
@@ -255,15 +255,15 @@ class Transaction {
 
 List<Transaction> todayTransactions = [
   Transaction(
-      title: 'iTunes',
-      description: 'Entertainment',
+      title: 'Mc Donalds',
+      description: 'Food & Beverage',
       amount: 500.00,
       date: DateTime.now(),
       iconUrl:
           'https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png'),
   Transaction(
-      title: 'Google Play',
-      description: 'Entertainment',
+      title: 'Burger King',
+      description: 'Food & Beverage',
       amount: 450.00,
       date: DateTime.now(),
       iconUrl:
@@ -276,21 +276,21 @@ List<Transaction> todayTransactions = [
     date: DateTime(2021, 06, 30),
   ),
   Transaction(
-    title: 'Sony',
-    description: 'Entertainment',
+    title: 'New Yorker',
+    description: 'Clothes',
     amount: 150.00,
     iconUrl: '',
     date: DateTime(2021, 06, 30),
   ),
   Transaction(
-    title: 'iFood',
-    description: 'Food & Beverage',
+    title: 'Zara',
+    description: '',
     amount: 50.00,
-    iconUrl: '',
+    iconUrl: 'Clothes',
     date: DateTime(2021, 06, 30),
   ),
   Transaction(
-    title: 'iPhone',
+    title: 'iDeal',
     description: 'Electronics',
     amount: 900.00,
     iconUrl: '',
