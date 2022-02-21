@@ -1,3 +1,5 @@
+import 'package:spense_app/view/pages/cashback/cashback_page.dart';
+
 import './theme/themes.dart';
 import './view/pages/auth/login.dart';
 import './view/pages/home/home.dart';

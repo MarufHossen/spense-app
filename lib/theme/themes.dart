@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class MyThemes {
   static final light = ThemeData.light().copyWith(
-    backgroundColor: Colors.grey[100],
+    backgroundColor: Colors.red,
     primaryColor: colorPrimary,
     appBarTheme: const AppBarTheme(
       backgroundColor: colorPrimary,

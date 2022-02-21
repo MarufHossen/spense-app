@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:logger/logger.dart';
 
 class SidebarController extends GetxController {
-  var selectedPageIndex = 1;
+  var selectedPageIndex = 0;
   var logger = Logger();
 
   void setPageIndex(int index) {
