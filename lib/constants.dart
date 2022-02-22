@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 // App colors (main)
-const Color colorPrimary = Color(0xFFef233c);
+// const Color colorPrimary = Color(0xFFef233c);
+const Color colorPrimary = Colors.amber;
 const Color colorAccent = Color(0xFFE9C46A);
 const Color colorHighlight = Color(0xFFFFA100);
 const Color colorPrimaryDark = Color(0xFF2b2d42);

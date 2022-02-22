@@ -14,7 +14,7 @@ class LoyaltyCard extends StatefulWidget {
 class _LoyaltyCardState extends State<LoyaltyCard>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late final PageController _pageController = PageController();
+  late PageController _pageController = PageController();
   late Animation<double> _rotation;
   final cards = 4;
 
@@ -29,7 +29,10 @@ class _LoyaltyCardState extends State<LoyaltyCard>
   }
 
   int _getCardIndex() {
-    return _pageController.hasClients ? _pageController.page!.round() : 0;
+    if (_pageController.hasClients && _pageController.page != null) {
+      return _pageController.page!.round();
+    }
+    return 0;
   }
 
   @override
@@ -109,16 +112,7 @@ class _LoyaltyCardState extends State<LoyaltyCard>
                     ? NeverScrollableScrollPhysics()
                     : BouncingScrollPhysics(),
                 itemBuilder: (context, i) {
-                  if (_getCardIndex() != i) return _Card();
-                  return Transform.rotate(
-                    angle: _rotation.value * math.pi / 180,
-                    alignment: Alignment.lerp(
-                      Alignment.center,
-                      Alignment(-.7, -.6),
-                      _controller.value,
-                    ),
-                    child: _Card(),
-                  );
+                  return _Card();
                 },
               );
             },

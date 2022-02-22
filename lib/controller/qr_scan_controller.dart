@@ -7,7 +7,6 @@ import '../controller/sidebar_controller.dart';
 import '../enums/booking_status_enum.dart';
 import '../model/scanner_data.dart';
 import 'package:flutter/material.dart';
-import 'package:geocoding/geocoding.dart';
 import 'package:get/get.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
@@ -53,18 +52,18 @@ class QRScanController extends GetxController {
 
       try {
         String orderId = parseDateFromQR(scanData)!;
-        Placemark currentPlace = await sidebarController.getCurrentAddress();
-        ScannerData scannerData = ScannerData(
-            location: currentPlace.street,
-            message:
-                "Your product is now at " + currentPlace.locality.toString());
-        ScannerData? response =
-            await ScannerApi.addNewScannerData(orderId, scannerData);
-        // isSending = false;
-        status = response!.status!;
+        // Placemark currentPlace = await sidebarController.getCurrentAddress();
+        // ScannerData scannerData = ScannerData(
+        //     location: currentPlace.street,
+        //     message:
+        //         "Your product is now at " + currentPlace.locality.toString());
+        // ScannerData? response =
+        //     await ScannerApi.addNewScannerData(orderId, scannerData);
+        // // isSending = false;
+        // status = response!.status!;
         update(["qr_scan"]);
         // qrViewController.resumeCamera();
-        print(response.status);
+        // print(response.status);
       } catch (e) {
         status = "scaning qr";
         update(["qr_scan"]);

@@ -39,12 +39,10 @@ dependencies:
   get_storage: ^2.0.1
   fluttertoast: ^8.0.7
   http: ^0.13.4
-  blue_thermal_printer: ^1.1.9
   geolocator: ^8.0.3
   geocoding: ^2.0.2
   logger: ^1.1.0
   animated_bottom_navigation_bar: ^0.3.2
-  fl_chart: ^0.45.0
 
 dev_dependencies:
   flutter_test:
