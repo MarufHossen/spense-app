@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:spense_app/constants.dart';
 import 'package:spense_app/model/coupon.dart';
 import 'package:spense_app/model/discover.dart';
+import 'package:spense_app/view/pages/category/category_page.dart';
 import 'package:spense_app/view/pages/expanded_coupons/expanded_coupons.dart';
 import 'components/coupon_card.dart';
 import 'components/discover_card.dart';
@@ -53,9 +55,12 @@ class _CouponsTabState extends State<CouponsTab> {
                 child: Row(children: [
                   Text("Discover", style: cHeaderTextStyle),
                   const Spacer(),
-                  Text(
-                    "View all",
-                    style: cTextStyle,
+                  TextButton(
+                    child: Text(
+                      "View all",
+                      style: cTextStyle,
+                    ),
+                    onPressed: () => {Get.to(const CategoryPage())},
                   ),
                   Icon(Icons.navigate_next, size: 16.0, color: cLightColor)
                 ]),

@@ -24,19 +24,21 @@ class _CashBackPageState extends State<CashBackPage> {
             elevation: 0,
             backgroundColor: Colors.transparent,
             leading: AppBarIconButton(
-              icon: Icons.person,
+              icon: Icons.location_on,
               onPressed: () {},
+            ),
+            centerTitle: false,
+            titleSpacing: 0,
+            title: const Text(
+              "Tallinn",
+              style: TextStyle(color: Colors.black45),
+              textAlign: TextAlign.left,
             ),
             actions: [
               AppBarIconButton(
                 icon: Icons.search_rounded,
                 onPressed: () {},
               ),
-              AppBarIconButton(
-                icon: Icons.notes_rounded,
-                onPressed: () {},
-              ),
-              const SizedBox(width: 12.0),
             ],
             bottom: PreferredSize(
               preferredSize: const Size.fromHeight(kToolbarHeight + 8.0),

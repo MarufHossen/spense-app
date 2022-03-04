@@ -6,8 +6,9 @@ import 'package:spense_app/model/discover.dart';
 
 class DiscoverCard extends StatelessWidget {
   final Discover discover;
-  DiscoverCard(this.discover);
+  const DiscoverCard(this.discover, {Key? key}) : super(key: key);
 
+  @override
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.zero,
@@ -48,7 +49,7 @@ class DiscoverCard extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                       color: Colors.white),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 4.0,
                 ),
                 Text(
@@ -56,7 +57,7 @@ class DiscoverCard extends StatelessWidget {
                   style:
                       cTextStyle.copyWith(color: Colors.white.withOpacity(0.9)),
                 ),
-                Spacer(),
+                const Spacer(),
                 Align(
                   alignment: Alignment.bottomRight,
                   child: Icon(
@@ -78,11 +79,12 @@ class DiscoverCardShadow extends StatelessWidget {
   final double xTranslate;
   final double yTranslate;
   final Gradient gradient;
-  DiscoverCardShadow(
+  const DiscoverCardShadow(
       {required this.xTranslate,
       required this.yTranslate,
       required this.gradient});
 
+  @override
   Widget build(BuildContext context) {
     return Center(
       child: Transform.translate(

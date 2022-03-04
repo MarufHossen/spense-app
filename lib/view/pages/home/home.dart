@@ -2,6 +2,7 @@
 
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:spense_app/view/pages/cashback/cashback_page.dart';
+import 'package:spense_app/view/pages/store/store_page.dart';
 
 import '../../../controller/sidebar_controller.dart';
 import '../../../enums/booking_status_enum.dart';
@@ -21,7 +22,7 @@ class _HomeState extends State<Home> {
   List<IconData> iconList = [
     Icons.home,
     Icons.store,
-    Icons.history,
+    Icons.assignment_outlined,
     Icons.person,
   ];
   // SidebarController sidebarController = Get.put(SidebarController());
@@ -54,7 +55,7 @@ class _HomeState extends State<Home> {
                   index: sidebarController.selectedPageIndex,
                   children: const [
                     CashBackPage(),
-                    BookingInfo(status: BookingStatus.pending),
+                    StorePage(),
                     BookingInfo(status: BookingStatus.completed),
                     BookingInfo(),
                   ],

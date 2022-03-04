@@ -18,7 +18,7 @@ class _MyHomeState extends State<MyHome> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       theme: MyThemes.light,
-      darkTheme: MyThemes.dark,
+      // darkTheme: MyThemes.dark,
       home: const Home(),
       debugShowCheckedModeBanner: false,
     );
