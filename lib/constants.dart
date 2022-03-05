@@ -19,6 +19,7 @@ const Color colorInputFieldBackground = Color(0xFFFAFAFA);
 const Color colorInputFieldBorder = Color(0xFFF3F2F2);
 const Color colorPageBackground = Color(0xFFF4F5F7);
 const Color colorCloseButtonBackground = Color(0x12707586);
+const Color colorSearchBarBackground = Color(0xFFF5F4F6);
 
 // Text styles
 const String appFontFamily = "Nunito";
