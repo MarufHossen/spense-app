@@ -1,6 +1,5 @@
 import './theme/themes.dart';
 import './view/pages/home/home.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
@@ -20,7 +19,7 @@ class _MyHomeState extends State<MyHome> {
       theme: MyThemes.light,
       // darkTheme: MyThemes.dark,
       home: const Home(),
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false
     );
   }
 }

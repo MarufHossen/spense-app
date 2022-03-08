@@ -10,8 +10,10 @@ class StoreCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(8.0),
+      height: 100,
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.black12),
+      color: Colors.white,
+          // border: Border.all(color: Colors.black12),
           borderRadius: BorderRadius.circular(8)),
       child: Column(
         children: [
@@ -33,7 +35,7 @@ class StoreCard extends StatelessWidget {
                 fontWeight: FontWeight.bold),
           ),
           const SizedBox(
-            height: 5,
+            height: 4,
           ),
           Text(
             store.cashbackAmount.toString() + "%",
@@ -43,14 +45,14 @@ class StoreCard extends StatelessWidget {
                 color: Colors.black54,
                 fontWeight: FontWeight.bold),
           ),
-          const Text(
-            "Cashback",
-            style: TextStyle(
-                fontFamily: "Nunito",
-                fontSize: 20,
-                color: Colors.black54,
-                fontWeight: FontWeight.bold),
-          )
+          // const Text(
+          //   "Cashback",
+          //   style: TextStyle(
+          //       fontFamily: "Nunito",
+          //       fontSize: 20,
+          //       color: Colors.black54,
+          //       fontWeight: FontWeight.bold),
+          // )
         ],
       ),
     );

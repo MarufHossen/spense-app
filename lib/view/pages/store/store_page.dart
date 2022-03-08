@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:spense_app/constants.dart';
 import 'package:spense_app/model/store.dart';
 import 'package:spense_app/view/pages/cashback/cashback_page.dart';
+import 'package:spense_app/view/pages/store/components/search_bar.dart';
 import 'package:spense_app/view/pages/store/components/store_card.dart';
 
 class StorePage extends StatefulWidget {
@@ -18,42 +20,39 @@ class _StorePageState extends State<StorePage> {
     // if(quizQuestionsProvider.isLoading == true) quizQuestionsProvider.requestOnlineQuestions();
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Colors.transparent,
             elevation: 0,
-            // The search area here
-            title: Container(
-              width: double.infinity,
-              height: 50,
-              decoration: BoxDecoration(
-                  color: colorSearchBarBackground,
-                  borderRadius: BorderRadius.circular(5)),
-              child: const Center(
-                child: TextField(
-                  showCursor: true,
-                  // cursorRadius: const Radius.circular(10.0),
-                  style: TextStyle(
-                      fontFamily: "Nunito", fontWeight: FontWeight.bold),
-                  decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.search),
-                      hintText: 'Search...',
-                      border: InputBorder.none),
-                ),
+            backgroundColor: Colors.white,
+            leading: AppBarIconButton(
+              icon: Icons.arrow_back,
+              onPressed: () {
+                Get.back();
+              },
+            ),
+            centerTitle: false,
+            titleSpacing: 0,
+            title: const SearchBar(),
+            actions: [
+              AppBarIconButton(
+                icon: Icons.close,
+                onPressed: () {},
               ),
-            )),
+            ],
+            ),
+        backgroundColor: colorPageBackground,
         body: Stack(
           children: <Widget>[
             CustomScrollView(
               physics: const BouncingScrollPhysics(),
               slivers: <Widget>[
                 SliverPadding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(10.0),
                   sliver: SliverGrid(
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 2,
                               childAspectRatio: 1.0,
-                              crossAxisSpacing: 8.0,
-                              mainAxisSpacing: 8.0),
+                              crossAxisSpacing: 5.0,
+                              mainAxisSpacing: 5.0),
                       delegate: SliverChildBuilderDelegate(
                         _buildStoreItem,
                         childCount: demoStores.length,

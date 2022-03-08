@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:spense_app/constants.dart';
 import 'package:spense_app/model/discover.dart';
 import 'package:spense_app/view/pages/coupons_tab/components/discover_card.dart';
+import 'package:spense_app/view/pages/store/store_page.dart';
 
 class CategoryPage extends StatefulWidget {
   const CategoryPage({Key? key}) : super(key: key);
@@ -40,14 +42,14 @@ class _CategoryPageState extends State<CategoryPage> {
               physics: const BouncingScrollPhysics(),
               slivers: <Widget>[
                 SliverPadding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(10.0),
                   sliver: SliverGrid(
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 2,
                               childAspectRatio: 1.0,
-                              crossAxisSpacing: 8.0,
-                              mainAxisSpacing: 8.0),
+                              crossAxisSpacing: 5.0,
+                              mainAxisSpacing: 5.0),
                       delegate: SliverChildBuilderDelegate(_buildCategoryItem,
                           childCount: discoverList.length)),
                 ),
@@ -64,12 +66,6 @@ class _CategoryPageState extends State<CategoryPage> {
   }
 
   _categoryPressed(BuildContext context) {
-    // category.id == 6
-    //     ? Navigator.of(context)
-    //         .push(MaterialPageRoute(builder: (_) => LeaderBoard()))
-    //     : Navigator.of(context).push(MaterialPageRoute(
-    //         builder: (_) => QuizPage(
-    //               category: category,
-    //             )));
+    Get.to(const StorePage());
   }
 }
