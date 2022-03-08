@@ -111,7 +111,7 @@ Heres how you can run the project.
 ## Roadmap
 
 - [x] Sketch design of application
-- [ ] UI design of the app with Flutter
+- [x] UI design of the app with Flutter
 - [ ] Create the REST api for the application
 - [ ] Implement api in the mobile application
 - [ ] Multi-language Support
