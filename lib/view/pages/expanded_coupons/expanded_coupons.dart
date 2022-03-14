@@ -86,7 +86,7 @@ class _ExpandedCouponsState extends State<ExpandedCoupons> {
     backgroundColor = TweenSequence<Color?>(
         List<TweenSequenceItem<Color?>>.generate(
             couponsList.length - 1,
-            (index) => new TweenSequenceItem(
+            (index) => TweenSequenceItem(
                 weight: 1.0,
                 tween: ColorTween(
                     begin: couponsList[index].backgroundColor,
@@ -151,7 +151,7 @@ class _ExpandedCouponsState extends State<ExpandedCoupons> {
                   ),
                   onPressed: () {},
                 ),
-                SizedBox(width: 12.0),
+                const SizedBox(width: 12.0),
               ],
             ),
             body: Stack(

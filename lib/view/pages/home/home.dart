@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
-import 'package:spense_app/view/pages/cashback/cashback_page.dart';
+import 'package:spense_app/view/pages/dashboard/dashboard_page.dart';
+import 'package:spense_app/view/pages/profile/profile_page.dart';
 import 'package:spense_app/view/pages/store/store_page.dart';
 
 import '../../../controller/sidebar_controller.dart';
@@ -54,10 +55,10 @@ class _HomeState extends State<Home> {
                 child: IndexedStack(
                   index: sidebarController.selectedPageIndex,
                   children: const [
-                    CashBackPage(),
+                    DashboardPage(),
                     StorePage(),
                     BookingInfo(status: BookingStatus.completed),
-                    BookingInfo(),
+                    ProfilePage(),
                   ],
                 ),
               ),

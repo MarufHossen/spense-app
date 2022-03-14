@@ -4,14 +4,14 @@ import 'package:spense_app/view/pages/loyalty_card/loyalty_card.dart';
 import '../../../constants.dart';
 import 'package:flutter/material.dart';
 
-class CashBackPage extends StatefulWidget {
-  const CashBackPage({Key? key}) : super(key: key);
+class DashboardPage extends StatefulWidget {
+  const DashboardPage({Key? key}) : super(key: key);
 
   @override
-  _CashBackPageState createState() => _CashBackPageState();
+  _DashboardPageState createState() => _DashboardPageState();
 }
 
-class _CashBackPageState extends State<CashBackPage> {
+class _DashboardPageState extends State<DashboardPage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -54,7 +54,7 @@ class _CashBackPageState extends State<CashBackPage> {
                     labelStyle: cTabTextStyle,
                     labelColor: cTextColor,
                     unselectedLabelColor: cLightColor,
-                    padding: EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(10.0),
                     tabs: [
                       Tab(
                         child: Row(

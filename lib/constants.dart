@@ -26,14 +26,15 @@ const String appFontFamily = "Nunito";
 
 const TextStyle textStyleLarge = TextStyle(
   color: colorTextRegular,
-  fontSize: 16.0,
+  fontSize: 18.0,
   fontFamily: appFontFamily,
+  letterSpacing: 0.5,
   fontWeight: FontWeight.w500,
 );
 
 const TextStyle textStyleRegular = TextStyle(
   color: colorTextRegular,
-  fontSize: 14.0,
+  fontSize: 16.0,
   fontFamily: appFontFamily,
   // fontWeight: FontWeight.w700,
 );
