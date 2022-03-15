@@ -63,6 +63,17 @@ flutter {
     source '../..'
 }
 
+
 dependencies {
+    // Firebase
+    implementation "com.google.firebase:firebase-messaging:21.0.1"
+
+    // Multidex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
