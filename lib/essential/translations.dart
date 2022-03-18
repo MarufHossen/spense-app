@@ -1,0 +1,60 @@
+import 'package:spense_app/constants.dart';
+import 'package:get/get.dart';
+
+class Messages extends Translations {
+  @override
+  Map<String, Map<String, String>> get keys => {
+        'en': {
+          "no_internet_connection": "Please check your Internet connection",
+          "name": "Name",
+          "email_address": "Email address",
+          "email_phone": "Email/Phone",
+          "phone_number": "Phone number",
+          "password": "Password",
+          "confirm_password": "Confirm password",
+          "old_password": "Old password",
+          "new_password": "New password",
+          "confirm_new_password": "Confirm new password",
+          "sign_in": "Sign in",
+          "sign_up": "Sign up",
+          "terms_and_conditions": "Terms & Conditions",
+          "forgot_password": "Forgot password?",
+          "done": "Done",
+          "skip": "Skip",
+          "see_all": "See All",
+          "handle_not_found": "Handle not found",
+          "invalid_email": "Invalid email address found",
+          "invalid_phone": "Invalid phone number found",
+          "fill_up_all_fields": "Please fill up all the fields",
+          "fill_up_the_field": "Please fill up the field",
+          "valid_country_required": "Please enter a valid country",
+          "valid_email_required": "Please enter a valid email address",
+          "valid_email_phone_required": "Please enter a valid email/phone",
+          "passwords_do_not_match": "Passwords do not match",
+          "code_length_required":
+              "Verification code should contain $minimumVerificationCodeLength characters",
+          "minimum_password_length_required":
+              "Password should contain at least $minimumPasswordLength characters",
+          "weak_password": "The password provided is too weak.",
+          "duplicate_email": "The account already exists for that email.",
+          "splash_title": "Spense Trivia",
+          "home": "Home",
+          "leader_board": "Leaderboard",
+          "shop": "Shop",
+          "login_error": "Could not log in",
+          "registration_error": "Could not register",
+          "quiz_error_point_submission": "Could not update the points",
+          "quiz_error_decrement_coin": "Could not decrement coins",
+          "quiz_error_decrement_gem": "Could not decrement gems",
+          "quiz_error_showing_ad": "Failed to show the ad",
+          "profile": "Profile",
+          "profile_your_rank": "Your Rank",
+          "profile_your_statistics": "Your Statistics",
+          "profile_earned_coins": "Earned Points",
+          "profile_correct": "Correct",
+          "profile_wrong": "Wrong",
+          "profile_gems": "Gems",
+          "profile_coins": "Coins",
+        },
+      };
+}
