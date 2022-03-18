@@ -24,7 +24,7 @@
     ·
     <a href="https://github.com/MarufHossen/spense-app/issues">Request Feature</a>
     ·
-    <a href="https://trello.com/b/HSK4Pzaf/spense-app">Trello Board</a>
+    <a href="https://trello.com/b/dyOwlc0H/spense-trivia">Trello Board</a>
   </p>
 </div>
 
@@ -54,14 +54,15 @@
 
 ## About The Project
 
-This is a mobile application. The idea is to get cashback and discount and other offers from any store. In simple, it is a kind of loyalty app for all the store. They can use the app when they purchase something from any shop and get points which can be used for purchasing in future. The main thing is to avoid having a lots of loyalty card for several shops. Instead, they can use only one loyalty card from our application to get the offer and cashback.
+Spense Trivia is an app when user can play quiz and earn points and coins. The quiz app has multiple choice questions to answer. Some of the questions include images and some are not. Everytime there will be one round of quiz with 20 questions and if user fail to answer any questions, he will not go to the next question. All the questions has 20 second to answer. After the time, the quiz round will be finished automatically. Each time he start the question, he will get unique questions. Same questions will never be repeated.
 
-There are two types of role in the project.
+There role in application.
 
 - User - who will use the app to purchase something.
-- Partner - who will create offer and discount for the user.
 
-The user can login, signup in the app. The user can see all the offers and discounts from different store based on his location. He can check all the offers in details by clicking on that item.
+The user can login, signup in the app. The user can see the leaderboard where he can check his postion among all players. He can check his profile how many coins he has and his rank on the app.
+
+The main goal is to create a quiz app which will motivate user to learn more by giving them coin and higher rank.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -69,10 +70,9 @@ The user can login, signup in the app. The user can see all the offers and disco
 
 This project is being built by
 
-- [Vue.js](https://vuejs.org/)
+- [React Js](https://reactjs.org/)
 - [Flutter](https://flutter.dev/)
 - [Node Js](https://nodejs.org/)
-- [Springboot](https://spring.io/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

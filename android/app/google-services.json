@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "521130645093",
+    "project_id": "spense-3acc6",
+    "storage_bucket": "spense-3acc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521130645093:android:03f7c33e13d2101f55188c",
+        "android_client_info": {
+          "package_name": "com.softcent.spense_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521130645093-5vqm2hlu1ve1u626khfpn8q4rd2qh152.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq5tvAxo84XeKIzA8bZQK98q6M12Nz5lE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521130645093-5vqm2hlu1ve1u626khfpn8q4rd2qh152.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
