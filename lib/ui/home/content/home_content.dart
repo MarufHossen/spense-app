@@ -61,15 +61,15 @@ class HomeContentPage extends GetView<HomeContentController> {
 
   Widget buildHeader() {
     return Center(
-      child: Image.asset(
-        "images/ic_app_logo_black.png",
-        fit: BoxFit.fitHeight,
-        height: 56.0,
-      ),
-    ).marginOnly(
+        child: Text("Spense",
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: colorTextRegular,
+            )).marginOnly(
       top: 12.0,
       bottom: 4.0,
-    );
+    ));
   }
 
   Widget buildBanner() {
