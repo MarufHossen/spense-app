@@ -11,10 +11,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
-  <h3 align="center">Spense</h3>
+  <h3 align="center">Spense Trivia</h3>
 
   <p align="center">
-    Save your money while shopping
+    Play Game, Earn coin. Check your rank!
     <br />
     <br />
     <br />
@@ -112,11 +112,11 @@ Heres how you can run the project.
 
 - [x] Sketch design of application
 - [x] UI design of the app with Flutter
-- [ ] Create the REST api for the application
-- [ ] Implement api in the mobile application
+- [x] Create the REST api for the application
+- [x] Implement api in the mobile application
 - [ ] Multi-language Support
   - [ ] Bengali
-  - [ ] English
+  - [x] English
 
 See the [open issues](https://github.com/MarufHossen/spense-app/issues) for a full list of proposed features (and known issues).
 
