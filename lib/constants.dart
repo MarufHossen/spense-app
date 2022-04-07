@@ -198,7 +198,8 @@ const String baseDevelopmentUrl = "";
 const String baseLiveUrl = "";
 const String baseUrl = baseDevelopmentUrl;
 
-const String baseAppDevelopmentUrl = "127.0.0.1/api";
+const String baseAppDevelopmentUrl =
+    "https://spense-trivia-backend.herokuapp.com";
 const String baseAppLiveUrl = "";
 const String baseAppUrl = baseAppDevelopmentUrl;
 
