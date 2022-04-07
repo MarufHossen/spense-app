@@ -95,7 +95,7 @@ class ShopPage extends GetView<ShopPageController> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Level",
+                          "level".tr,
                           style: textStyleRegular.copyWith(
                             fontWeight: FontWeight.w700,
                           ),
@@ -202,7 +202,7 @@ class ShopPage extends GetView<ShopPageController> {
         vertical: 24.0,
       ),
       child: Text(
-        "Store".toUpperCase(),
+        "store".tr.toUpperCase(),
         style: textStyleExtraExtraLarge,
         textAlign: TextAlign.center,
       ),

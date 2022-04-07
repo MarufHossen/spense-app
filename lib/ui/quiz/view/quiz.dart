@@ -96,7 +96,7 @@ class ViewQuizPage extends GetView<ViewQuizController> {
                 children: [
                   Obx(
                     () => Text(
-                      "Question ${(controller.currentQuestionIndex.value + 1).toString().padLeft(2, "0")}",
+                      "${"question".tr} ${(controller.currentQuestionIndex.value + 1).toString().padLeft(2, "0")}",
                       style: textStyleRegular.copyWith(
                         fontSize: 22.0,
                       ),
@@ -284,7 +284,7 @@ class ViewQuizPage extends GetView<ViewQuizController> {
                                     size: 16.0,
                                   ).marginOnly(right: 8.0),
                                   Text(
-                                    "Hint",
+                                    "hint".tr,
                                     style: textStyleRegular.copyWith(
                                       color: colorTextWarning,
                                     ),
@@ -358,7 +358,7 @@ class ViewQuizPage extends GetView<ViewQuizController> {
 
   Widget buildButtonSection(QuestionResponse data) {
     return CustomFilledButton(
-      title: "Quit Quiz",
+      title: "quit_quiz".tr,
       onTap: () {
         dismissQuiz(data);
       },
@@ -449,7 +449,7 @@ class ViewQuizPage extends GetView<ViewQuizController> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Level",
+                          "level".tr,
                           style: textStyleRegular.copyWith(
                             fontWeight: FontWeight.w700,
                           ),
@@ -668,12 +668,12 @@ class ViewQuizPage extends GetView<ViewQuizController> {
                     right: 20.0,
                   ),
                   Text(
-                    "Wait",
+                    "wait".tr,
                     style: textStyleExtraExtraLarge,
                     textAlign: TextAlign.center,
                   ),
                   Text(
-                    "Skip 2 choices so you can guess easily!",
+                    "skip_2_choices".tr,
                     style: textStyleExtraLarge.copyWith(
                       color: colorTextSecondary,
                       fontWeight: FontWeight.w700,
@@ -687,19 +687,13 @@ class ViewQuizPage extends GetView<ViewQuizController> {
               ),
             ),
             CustomFilledButton(
-              title: "Watch a video",
-              onTap: () {
-                controller.showAd(data, dismissQuiz, currentQuestion);
-              },
-            ),
-            CustomFilledButton(
-              title: "Use Coins",
+              title: "profile_coins".tr,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    "Use Coins",
+                    "profile_coins".tr,
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16.0,
@@ -736,7 +730,7 @@ class ViewQuizPage extends GetView<ViewQuizController> {
               },
             ),
             Text(
-              "You can skip the question as well!",
+              "skip_question".tr,
               style: textStyleExtraLarge.copyWith(
                 color: colorTextSecondary,
                 fontWeight: FontWeight.w700,
@@ -747,13 +741,13 @@ class ViewQuizPage extends GetView<ViewQuizController> {
               bottom: 8.0,
             ),
             CustomFilledButton(
-              title: "Use Gems",
+              title: "profile_gems".tr,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    "Use Gems",
+                    "profile_gems".tr,
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16.0,
@@ -823,7 +817,7 @@ class ViewQuizPage extends GetView<ViewQuizController> {
               repeat: false,
             ).marginOnly(bottom: 12.0),
             Text(
-              isRight ? "Correct" : "Next time, Do better",
+              isRight ? "correct".tr : "next_time_do_better".tr,
               style: textStyleExtraExtraLarge,
               textAlign: TextAlign.center,
             ),
@@ -858,12 +852,12 @@ class ViewQuizPage extends GetView<ViewQuizController> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
-                      "Good Job!".toUpperCase(),
+                      "good_job".tr.toUpperCase(),
                       style: textStyleExtraExtraLarge,
                       textAlign: TextAlign.center,
                     ),
                     Text(
-                      "Let's try again!",
+                      "try_again".tr,
                       style: textStyleExtraLarge.copyWith(
                         color: colorTextSecondary,
                         fontWeight: FontWeight.w700,
@@ -886,7 +880,7 @@ class ViewQuizPage extends GetView<ViewQuizController> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  "Points Earned",
+                                  "profile_earned_coins".tr,
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
                                     fontSize: 20.0,
@@ -980,14 +974,14 @@ class ViewQuizPage extends GetView<ViewQuizController> {
                       children: [
                         Expanded(
                           child: buildStatisticsItem(
-                            "Correct",
+                            "correct".tr,
                             "${controller.rightAnswers.toString().padLeft(2, "0")}",
                           ),
                         ),
                         SizedBox(width: 8.0),
                         Expanded(
                           child: buildStatisticsItem(
-                            "Wrong",
+                            "profile_wrong".tr,
                             "${controller.wrongAnswers.toString().padLeft(2, "0")}",
                           ),
                         ),
@@ -997,7 +991,7 @@ class ViewQuizPage extends GetView<ViewQuizController> {
                 ),
               ),
               CustomFilledButton(
-                title: "Return to Home",
+                title: "return_home".tr,
                 onTap: () async {
                   await Get.find<HomeContentController>().getProfileData();
                   controller.goBack(

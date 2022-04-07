@@ -61,7 +61,7 @@ class LoginPage extends GetView<LoginController> {
                                   Container(
                                     width: double.maxFinite,
                                     child: Text(
-                                      "Welcome to our app",
+                                      "welcome_app".tr,
                                       style: textStyleHeadline,
                                       textAlign: TextAlign.center,
                                     ).marginOnly(
@@ -70,7 +70,7 @@ class LoginPage extends GetView<LoginController> {
                                     ),
                                   ),
                                   Text(
-                                    "Please sign up/log in in order to track your stats and compete with your friends!",
+                                    "welcome_tagline".tr,
                                     style: textStyleLarge.copyWith(
                                       color: colorTextSecondary,
                                     ),
@@ -82,13 +82,13 @@ class LoginPage extends GetView<LoginController> {
                             CustomTextFormField(
                               formController: controller.emailController,
                               inputType: TextInputType.emailAddress,
-                              hint: "Email address",
+                              hint: "email_address".tr,
                               iconPath: "images/ic_email.png",
                             ),
                             CustomTextFormField(
                               formController: controller.passwordController,
                               inputType: TextInputType.visiblePassword,
-                              hint: "Password",
+                              hint: "password".tr,
                               iconPath: "images/ic_lock.png",
                             ),
                             Container(
@@ -101,7 +101,7 @@ class LoginPage extends GetView<LoginController> {
                               child: GestureDetector(
                                 onTap: () {},
                                 child: Text(
-                                  "Forgot Password?",
+                                  "forgot_password".tr,
                                   textAlign: TextAlign.end,
                                   style: textStyleLarge.copyWith(
                                     fontWeight: FontWeight.w700,
@@ -113,7 +113,7 @@ class LoginPage extends GetView<LoginController> {
                             Column(
                               children: [
                                 CustomFilledButton(
-                                  title: "Log In",
+                                  title: "sign_in".tr,
                                   onTap: () {
                                     controller.login();
                                   },
@@ -126,7 +126,7 @@ class LoginPage extends GetView<LoginController> {
                                 ),
                                 RichText(
                                   text: TextSpan(
-                                    text: "Don't have an account? ",
+                                    text: "doesnt_have_account".tr + " ",
                                     style: textStyleRegular,
                                     children: [
                                       TextSpan(
@@ -137,7 +137,7 @@ class LoginPage extends GetView<LoginController> {
                                               binding: RegistrationBinding(),
                                             );
                                           },
-                                        text: "Sign Up",
+                                        text: "sign_up".tr,
                                         style: textStyleRegular.copyWith(
                                           fontWeight: FontWeight.w700,
                                           color: colorAccent,

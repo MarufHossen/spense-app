@@ -64,8 +64,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       enableLog: kDebugMode,
       translations: Messages(),
-      locale: Locale('en'),
-      fallbackLocale: Locale('en'),
+      locale: Locale('bn'),
+      fallbackLocale: Locale('bn'),
       theme: ThemeData(
         backgroundColor: Colors.white,
         primaryColor: colorPrimary,

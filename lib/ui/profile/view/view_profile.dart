@@ -257,7 +257,7 @@ class ViewProfilePage extends GetView<ViewProfileController> {
                 ),
                 SizedBox(width: 16.0),
                 Text(
-                  "${data.gems}\n" + 'profile_gems'.tr,
+                  "${data.gems}\n" + "profile_gems".tr,
                   style: textStyleFocused,
                   textAlign: TextAlign.start,
                   overflow: TextOverflow.ellipsis,
@@ -276,7 +276,7 @@ class ViewProfilePage extends GetView<ViewProfileController> {
                 ),
                 SizedBox(width: 16.0),
                 Text(
-                  "${data.coins}\n" + 'profile_coins'.tr,
+                  "${data.coins}\n" + "profile_coins".tr,
                   style: textStyleFocused,
                   textAlign: TextAlign.start,
                   overflow: TextOverflow.ellipsis,

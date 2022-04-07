@@ -54,7 +54,7 @@ class LeaderBoardPage extends GetView<LeaderBoardController> {
                           children: [
                             Expanded(
                               child: Text(
-                                "Nickname",
+                                "nickname".tr,
                                 style: textStyleRegular.copyWith(
                                   color: Colors.white,
                                 ),
@@ -65,7 +65,7 @@ class LeaderBoardPage extends GetView<LeaderBoardController> {
                             SizedBox(
                               width: itemSizeSingle,
                               child: Text(
-                                "Lvl",
+                                "level".tr,
                                 style: textStyleRegular.copyWith(
                                   color: Colors.white,
                                 ),
@@ -76,7 +76,7 @@ class LeaderBoardPage extends GetView<LeaderBoardController> {
                             SizedBox(
                               width: itemSizeDouble,
                               child: Text(
-                                "Answers",
+                                "answers".tr,
                                 style: textStyleRegular.copyWith(
                                   color: Colors.white,
                                 ),
@@ -88,7 +88,7 @@ class LeaderBoardPage extends GetView<LeaderBoardController> {
                             SizedBox(
                               width: itemSizeDouble,
                               child: Text(
-                                "Correct",
+                                "correct".tr,
                                 style: textStyleRegular.copyWith(
                                   color: Colors.white,
                                 ),

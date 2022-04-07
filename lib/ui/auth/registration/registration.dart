@@ -60,93 +60,24 @@ class RegistrationPage extends GetView<RegistrationController> {
                                   ),
                                 ),
                                 Text(
-                                  "Welcome to Spense Trivia",
+                                  "welcome_to_trivia".tr,
                                   style: textStyleHeadline,
                                   textAlign: TextAlign.start,
                                   overflow: TextOverflow.ellipsis,
                                 ).marginOnly(top: 16.0, bottom: 8.0),
-                                Text(
-                                  "Great, it's a pleasure to have you here. Let's get you setup.",
-                                  style: textStyleLarge.copyWith(
-                                    color: colorTextSecondary,
-                                  ),
-                                  textAlign: TextAlign.start,
-                                  overflow: TextOverflow.ellipsis,
-                                  maxLines: 3,
-                                ),
-                              ],
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                              left: 20.0,
-                              right: 20.0,
-                              bottom: 16.0,
-                            ),
-                            child: Row(
-                              children: [
-                                Container(
-                                  margin: const EdgeInsets.only(right: 16.0),
-                                  padding: const EdgeInsets.all(20.0),
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    color: Colors.white,
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(0.4),
-                                        spreadRadius: 2,
-                                        blurRadius: 5,
-                                        offset: Offset(
-                                          1,
-                                          3,
-                                        ), // changes position of shadow
-                                      ),
-                                    ],
-                                  ),
-                                  child: Image.asset(
-                                    "images/ic_profile.png",
-                                    fit: BoxFit.fitHeight,
-                                    height: 40.0,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "Profile Image",
-                                        style: textStyleHeadline.copyWith(
-                                          fontSize: 22.0,
-                                        ),
-                                        textAlign: TextAlign.start,
-                                        overflow: TextOverflow.ellipsis,
-                                      ).marginOnly(bottom: 8.0),
-                                      Text(
-                                        "Help your friend to recognize you easier in app",
-                                        style: textStyleLarge.copyWith(
-                                          color: colorTextSecondary,
-                                        ),
-                                        textAlign: TextAlign.start,
-                                        overflow: TextOverflow.ellipsis,
-                                        maxLines: 3,
-                                      ),
-                                    ],
-                                  ),
-                                ),
                               ],
                             ),
                           ),
                           CustomTextFormField(
                             formController: viewController.emailController,
                             inputType: TextInputType.emailAddress,
-                            hint: "Email address",
+                            hint: "email_address".tr,
                             iconPath: "images/ic_email.png",
                           ),
                           CustomTextFormField(
                             formController: viewController.nameController,
                             inputType: TextInputType.name,
-                            hint: "Full Name",
+                            hint: "nickname".tr,
                             iconPath: "images/ic_user.png",
                           ),
                           FutureBuilder<CountryDataResponse>(
@@ -169,7 +100,7 @@ class RegistrationPage extends GetView<RegistrationController> {
                           CustomTextFormField(
                             formController: viewController.passwordController,
                             inputType: TextInputType.visiblePassword,
-                            hint: "Password",
+                            hint: "password".tr,
                             iconPath: "images/ic_lock.png",
                           ),
                           Container(
@@ -181,8 +112,7 @@ class RegistrationPage extends GetView<RegistrationController> {
                             child: RichText(
                               textAlign: TextAlign.center,
                               text: TextSpan(
-                                text:
-                                    "By creating account, you agree with our ",
+                                text: "creating_account_agreement".tr + " ",
                                 style: textStyleRegular.copyWith(
                                   fontWeight: FontWeight.w700,
                                 ),
@@ -190,14 +120,14 @@ class RegistrationPage extends GetView<RegistrationController> {
                                   TextSpan(
                                     recognizer: TapGestureRecognizer()
                                       ..onTap = () {},
-                                    text: "Terms & Conditions",
+                                    text: "terms_and_conditions".tr,
                                     style: textStyleRegular.copyWith(
                                       fontWeight: FontWeight.w700,
                                       color: colorAccent,
                                     ),
                                   ),
                                   TextSpan(
-                                    text: " and ",
+                                    text: " " + "and".tr + " ",
                                     style: textStyleRegular.copyWith(
                                       fontWeight: FontWeight.w700,
                                     ),
@@ -205,7 +135,7 @@ class RegistrationPage extends GetView<RegistrationController> {
                                   TextSpan(
                                     recognizer: TapGestureRecognizer()
                                       ..onTap = () {},
-                                    text: "Privacy Policy",
+                                    text: "privacy_policy".tr,
                                     style: textStyleRegular.copyWith(
                                       fontWeight: FontWeight.w700,
                                       color: colorAccent,
@@ -218,7 +148,7 @@ class RegistrationPage extends GetView<RegistrationController> {
                           Column(
                             children: [
                               CustomFilledButton(
-                                title: "Let's Start",
+                                title: "sign_up".tr,
                                 onTap: () {
                                   controller.register();
                                 },
@@ -231,7 +161,7 @@ class RegistrationPage extends GetView<RegistrationController> {
                               ),
                               RichText(
                                 text: TextSpan(
-                                  text: "Already have an account? ",
+                                  text: "already_have_account".tr + " ",
                                   style: textStyleRegular,
                                   children: [
                                     TextSpan(
@@ -239,7 +169,7 @@ class RegistrationPage extends GetView<RegistrationController> {
                                         ..onTap = () {
                                           Get.back();
                                         },
-                                      text: "Sign In",
+                                      text: "sign_in".tr,
                                       style: textStyleRegular.copyWith(
                                         fontWeight: FontWeight.w700,
                                         color: colorAccent,

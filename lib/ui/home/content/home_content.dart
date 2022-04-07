@@ -120,7 +120,7 @@ class HomeContentPage extends GetView<HomeContentController> {
               ),
             ),
             child: Text(
-              "Play Quiz".toUpperCase(),
+              "play_quiz".tr.toUpperCase(),
               style: textStyleLarge.copyWith(
                 color: colorAccent,
                 fontWeight: FontWeight.w600,
@@ -150,12 +150,12 @@ class HomeContentPage extends GetView<HomeContentController> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                "Are you the ULTIMATE quiz expert?",
+                "are_you_quiz_expert_text".tr,
                 style: textStyleExtraLarge,
                 textAlign: TextAlign.center,
               ).marginOnly(bottom: 6.0),
               Text(
-                "Answer 20 questions correctly and score the maximum points!",
+                "20_question_answer".tr,
                 style: textStyleLarge.copyWith(
                   color: colorTextRegular,
                   fontWeight: FontWeight.w600,
@@ -174,7 +174,7 @@ class HomeContentPage extends GetView<HomeContentController> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Leaderboard",
+          "leader_board".tr,
           style: textStyleExtraLarge.copyWith(
             fontWeight: FontWeight.w600,
           ),
@@ -185,7 +185,7 @@ class HomeContentPage extends GetView<HomeContentController> {
           children: [
             Expanded(
               child: Text(
-                "Nickname",
+                "nickname".tr,
                 style: textStyleRegular,
                 textAlign: TextAlign.start,
                 overflow: TextOverflow.ellipsis,
@@ -194,7 +194,7 @@ class HomeContentPage extends GetView<HomeContentController> {
             SizedBox(
               width: itemSizeSingle,
               child: Text(
-                "Lvl",
+                "level".tr,
                 style: textStyleRegular,
                 textAlign: TextAlign.center,
                 overflow: TextOverflow.ellipsis,
@@ -203,7 +203,7 @@ class HomeContentPage extends GetView<HomeContentController> {
             SizedBox(
               width: itemSizeDouble,
               child: Text(
-                "Answers",
+                "answers".tr,
                 style: textStyleRegular,
                 textAlign: TextAlign.center,
                 overflow: TextOverflow.ellipsis,
@@ -213,7 +213,7 @@ class HomeContentPage extends GetView<HomeContentController> {
             SizedBox(
               width: itemSizeDouble,
               child: Text(
-                "Correct",
+                "correct".tr,
                 style: textStyleRegular,
                 textAlign: TextAlign.center,
                 overflow: TextOverflow.ellipsis,
