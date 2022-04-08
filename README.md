@@ -86,10 +86,9 @@ Here you will get the instructions to build the project and run it in local mach
 
 This project requires node js installed on the machine and also npm manager.
 
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Install flutter in your pc first.
+
+- [Flutter Install Guide](https://docs.flutter.dev/get-started/install)
 
 ### Installation
 
@@ -99,10 +98,19 @@ Heres how you can run the project.
    ```sh
    git clone https://github.com/MarufHossen/spense-app
    ```
-2. Install NPM packages
+2. Install flutter packages
    ```sh
-   npm install
+   flutter pub get
    ```
+3. Run flutter app in debug mode
+   ```sh
+   flutter run
+   ```
+4. To build apk
+   ```sh
+   flutter build apk
+   ```
+5. Go to /build/app/output/debug/app-debug.apk
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
