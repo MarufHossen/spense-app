@@ -260,6 +260,7 @@ const String keyWrongAnswer = "wrong_answer";
 const String keySeenQuestionIds = "seen_question_ids";
 const String keyRank = "rank";
 const String keyInAppProducts = "in-app-products";
+const String keyLanguage = "language";
 
 // Regular Expression
 const String regularExpressionEmail =

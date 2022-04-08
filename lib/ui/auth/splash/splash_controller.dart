@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:ui';
 
 import 'package:flutter/services.dart';
 import 'package:spense_app/constants.dart';
@@ -30,7 +31,8 @@ class SplashController extends GetxController {
   @override
   void onReady() {
     super.onReady();
-    getAppEssentials();
+    checkLanguage();
+    // getAppEssentials();
   }
 
   @override
@@ -88,6 +90,51 @@ class SplashController extends GetxController {
       } else {
         goToNextPage();
       }
+    }
+  }
+
+  Future<void> setLanguage(String lang) async {
+    var locale = Locale(lang);
+    Get.updateLocale(locale);
+    try {
+      await PreferenceUtil.on.write<String>(keyLanguage, lang);
+      Get.log("Set Languge: \'${lang.toString()}\'");
+    } catch (e) {
+      Get.log("Error: ${e.toString()}");
+    } finally {
+      getAppEssentials();
+    }
+  }
+
+  Future<void> checkLanguage() async {
+    try {
+      // await PreferenceUtil.on.write<String>(keyLanguage, "unset");
+      String? lang = await PreferenceUtil.on
+          .read<String>(keyLanguage, defaultValue: "unset");
+
+      Get.log("Check Languge: \'${lang.toString()}\'");
+      if (lang != "unset") {
+        var locale = Locale(lang!);
+        Get.updateLocale(locale);
+        getAppEssentials();
+      }
+    } catch (e) {
+      Get.log("Error: ${e.toString()}");
+    }
+  }
+
+  Future<String?> getLanguage() async {
+    try {
+      String? lang = await PreferenceUtil.on
+          .read<String>(keyLanguage, defaultValue: "unset");
+
+      Get.log("Get Languge: \'${lang.toString()}\'");
+      if (lang != "unset") {
+        return lang;
+      }
+      return "unset";
+    } catch (e) {
+      Get.log("Error: ${e.toString()}");
     }
   }
 }

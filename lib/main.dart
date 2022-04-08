@@ -34,16 +34,9 @@ Future<void> main() async {
         InAppPurchaseAndroidPlatformAddition.enablePendingPurchases();
       }
 
-      // FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
-
-      // Pass all uncaught errors from the framework to Crashlytics.
-      // FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
-
       runApp(MyApp());
     },
-    (error, stackTrace) {
-      // FirebaseCrashlytics.instance.recordError(error, stackTrace);
-    },
+    (error, stackTrace) {},
   );
 }
 
